@@ -1,0 +1,14 @@
+extends layout
+
+block append scripts
+  script(src='javascripts/Tool.js')
+  script(src='javascripts/BrushTool.js')
+  script(src='javascripts/beer-label-app.js')
+
+block content
+  .container
+    .row
+      .tools(class='col-2') tools
+      .canvas(class='col-8')
+        canvas
+      .inspector(class='col-2') inspector
